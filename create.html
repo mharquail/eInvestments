@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Meta Info -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>eInvestment | Secure Login</title>
+
+		<!-- Google Fonts Imports -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+		<!-- Style Imports -->
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/global.css">
+		<link rel="stylesheet" type="text/css" href="./css/create.css">
+
+		<!-- JQuery Import -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="headerArea">
+			<h1>Welcome to eInvestment</h1>
+			<h2>Online Investment Banking</h2>
+		</div>
+		<div id="createArea">            
+            <h3>Create Customer Account:</h3>
+            <form name="createAccount" ACTION="./php/createConnection.php" METHOD='post'>
+            	<h4>Client ID</h4>        
+				<input type="text" name="clientID" id="clientID" class="createAccountField" placeholder="100000000000000" required="required" >
+				<br>
+				<h4>First Name</h4>
+				<input type="text" name="firstName" id="firstName" class="createAccountField" placeholder="John..." required="required">
+            	<br>
+            	<h4>Last Name</h4>
+				<input type="text" name="lastName" id="lastName" class="createAccountField" placeholder="Smith..." required="required">
+            	<br>
+            	<h4>Date Of Birth</h4>
+				<input type="date" name="dateOfBirth" id="dateOfBirth" class="createAccountField" placeholder="mm/dd/yyyy" min="1900-01-01" max="2002-01-01" required="required">
+            	<br>
+            	<h4>Address</h4>
+				<input type="text"  name="address" id="address" class="createAccountField" placeholder="111 Trafalgar Rd" required="required">
+            	<br>
+            	<h4>City</h4>
+				<input type="text" name="city" id="city" class="createAccountField" placeholder="Mississauga..." required="required">
+           	 	<br>
+            	<h4>Postal Code</h4>
+				<input type="text" name="postalCode" id="postalCode" class="createAccountField" placeholder="N5M8T8..." required="required">
+            	<br>
+            	<h4>Phone Number</h4>
+				<input type="tel" name="phone" id="phone" class="createAccountField" placeholder="905-288-4588" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required">
+           		<br>
+            	<br>
+			<div id="managementArea">
+				<input type="submit" class="createLink" value="Create an Account" required="required">
+                <br>
+            </form>
+			</div>
+		</div>
+	
+	</body>
+</html>
