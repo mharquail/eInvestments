@@ -11,8 +11,9 @@ Colour Palette
 
 Normal Blue - #2465ab
 Dark Blue 	- #0c3969
-OffWhite 	- #FAFAFA
-OffBlack 	- #3D3D3D
+Off White 	- #FAFAFA
+Dark Gery	- #232323
+Medium Grey - #3D3D3D
 Grey 		- #EBEBEB
 */
 
@@ -56,10 +57,6 @@ html{
 	padding: 27px 25px;
 }
 
-.navRight{
-	
-}
-
 .navActive{
 	background-color: #0c3969;
 }
@@ -71,4 +68,134 @@ html{
   	background-color: #2465ab;
 }
 
+/* Global Objects */
+.globalButton{
+	text-decoration: none;
+	color: #FAFAFA;
+	padding: 2%;
+	border: none;
+	margin: 0.5% auto;
+	width: 40%;
+	background-color: #2465ab;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+	font-size: 0.8em;
+}
+
+.globalButton:hover{
+	background-color: #0c3969;
+	color: #FAFAFA;
+	cursor: pointer;
+}
+
 /* homepage.html */
+#homeAll{
+
+}
+
+#homeMenuArea{
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 1%;
+}
+
+.homeButtonLarge{
+	width: 48%;
+	height: 300px;
+	display: inline-block;
+	margin: 0.5%;
+	padding: 0;
+	border: none;
+	color: #FAFAFA;
+	position: relative;
+	cursor: pointer;
+}
+
+#homeButtonNew::before{
+	background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2F5dfdb154-ecb3-11e8-89c8-d36339d835c0?fit=scale-down&source=next");
+}
+
+#homeButtonView::before{
+	background-image: url("https://m.economictimes.com/thumb/msid-71633105,width-3684,height-2068,resizemode-4,imgsize-550306/stocks-market.jpg");
+}
+
+#homeButtonClose::before{
+	background-image: url("https://www.nzherald.co.nz/indepth/business/1987-stock-market-crash/assets/page-zPp1YLEmFG/section-dCBtztD86J/landscape/fallback-KqyFKL2vP8/TitleScreen-2560x1440.jpeg");
+}
+
+.homeButtonLarge::before{
+	content:"";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top left;
+	width: 100%;
+	height: 100%;
+	filter: blur(0px) grayscale(0.7) brightness(60%);
+	transition: all 0.1s ease-in-out;
+}
+
+.homeButtonLarge:hover::before{
+	filter: blur(0px) grayscale(0.3) brightness(90%);
+}
+
+.homeButtonSmall{
+	width: 23.5%;
+	height: 300px;
+	display: inline-block;
+	margin: 0.5%;
+	padding: 0;
+	border: none;
+	color: #FAFAFA;
+	position: relative;
+	cursor: pointer;
+}
+
+#homeButtonInvest::before{
+	background-image: url("https://ccnwordpress.blob.core.windows.net/journal/2018/02/stock-market-3.jpg");
+}
+
+#homeButtonWithdraw::before{
+	background-image: url("http://tinobusiness.com/wp-content/uploads/2015/10/ap9ctt-person-withdrawing-cash-atm-machine-money-dollar-bills-bank-banking-fees-financial-institution-2-e1444201622299.jpg");
+}
+
+.homeButtonSmall::before{
+	content:"";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top left;
+	width: 100%;
+	height: 100%;
+	filter: blur(0px) grayscale(0.7) brightness(60%);
+	transition: all 0.1s ease-in-out;
+}
+
+.homeButtonSmall:hover::before{
+	filter: blur(0px) grayscale(0.3) brightness(90%);
+}
+
+.homeButtonText{
+	position: relative;
+	font-size: 4em;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	text-shadow: 0px 3px 5px rgba(0, 0, 0, 1);
+	font-family: Roboto, Helvetica, Verdana, Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+

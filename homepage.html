@@ -1,18 +1,17 @@
 <!-- 
 SYST45713
 Group: C
-Vyahn Do - 
 Kevin Baumgartner - 991396870
 
 Website Home Page
 -->
 <!DOCTYPE html>
-<html>
+<html id="homeAll">
 	<head>
 		<!-- Meta Info -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>eInvestment | Home</title>
+		<title>eInvestment | Dashboard</title>
 
 		<!-- Google Fonts Imports -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -35,38 +34,14 @@ Website Home Page
 				<li class="navItem navActive"><a href="homepage.html">Home</a></li>
 				<li class="navItem"><a href="#">Clients</a></li>
 				<li class="navItem"><a href="#">Settings</a></li>
-				<li class="navItem navRight"><a href="index.html">Logout</a></li>
+				<li class="navItem"><a href="index.html">Logout</a></li>
 			</ul>
 		</div>
-
-		<div id="headerArea">
-			<h1>Welcome back!</h1> 
-        </div>
         
-        <div id="redirectArea">
-            <br>
-			<div id="managementArea">
-                <h3>Please Choose An Option</h3>
-                <form action="openAccount.html">
-                        <input class="loginLink" type="submit" value="New Account" />
-                </form>
-                <form action="viewAccount.html">
-                        <input class="loginLink" type="submit" value="View Account" />
-                </form>
-                <form action="redeemAccount.html">
-                    <input class="loginLink" type="submit" value="Invest" />
-                </form>
-                <form action="redeemAccount.html">
-                    <input class="loginLink" type="submit" value="Withdraw" />
-                </form>
-                <form action="closeAccount.html">
-                        <input class="loginLink" type="submit" value="Close Account" />
-                </form>
-                <br><br><br><br>
-                <form action="index.html">
-                    <input class="loginLink" type="submit" value="Logout" />
-                </form>
-			</div>
+        <!-- Menu Area -->
+        <div id="homeMenuArea">
+        	<button id="homeButtonNew" class="homeButtonLarge" onclick="location.href = 'openAccount.html'"><span class="homeButtonText">New Account</span></button><button id="homeButtonView" class="homeButtonLarge" onclick="location.href = 'viewAccount.html'"><span class="homeButtonText">View Account</span></button>
+        	<button id="homeButtonClose" class="homeButtonLarge" onclick="location.href = 'closeAccount.html'"><span class="homeButtonText">Close Account</></button><button id="homeButtonInvest" class="homeButtonSmall" onclick="location.href = 'invest.html'"><span class="homeButtonText">Invest</span></button><button id="homeButtonWithdraw" class="homeButtonSmall" onclick="location.href = 'withdraw.html'"><span class="homeButtonText">Withdraw</span></button>
 		</div>
 
 		<!-- Script Imports -->
