@@ -12,7 +12,7 @@ Colour Palette
 Normal Blue - #2465ab
 Dark Blue 	- #0c3969
 Off White 	- #FAFAFA
-Dark Gery	- #232323
+Dark Grey	- #232323
 Medium Grey - #3D3D3D
 Grey 		- #EBEBEB
 */
@@ -29,6 +29,7 @@ html{
 	background-color: #2465ab;
 	height: 80px;
 	width: 100%;
+	border: none;
 }
 
 #navBar {
@@ -42,7 +43,7 @@ html{
 	height: 80px;
 	display: table-cell;
 	vertical-align: middle;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.1s ease-in-out;
 }
 
 .navItem:hover{
@@ -68,6 +69,10 @@ html{
   	background-color: #2465ab;
 }
 
+.navLogout:hover{
+	background-color: #c91c10 !important;
+}
+
 /* Global Objects */
 .globalButton{
 	text-decoration: none;
@@ -78,7 +83,7 @@ html{
 	width: 40%;
 	background-color: #2465ab;
 	text-transform: uppercase;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.1s ease-in-out;
 	font-size: 0.8em;
 }
 
@@ -86,6 +91,16 @@ html{
 	background-color: #0c3969;
 	color: #FAFAFA;
 	cursor: pointer;
+}
+
+.pageHeader{
+	text-align: center;
+	padding: 0;
+	margin: 2% auto;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 2em;
+	width: 30%;
 }
 
 /* homepage.html */
@@ -97,7 +112,6 @@ html{
 	text-align: center;
 	width: 100%;
 	margin: 0 auto;
-	margin-top: 1%;
 }
 
 .homeButtonLarge{
@@ -190,6 +204,60 @@ html{
 	text-shadow: 0px 3px 5px rgba(0, 0, 0, 1);
 	font-family: Roboto, Helvetica, Verdana, Arial, sans-serif;
 }
+
+/* openAccount.html */
+#openAll{
+	
+}
+
+#openArea{
+	text-align: center;
+	width: 40%;
+	margin: 0 auto;
+}
+
+.openAccountHeader{
+	font-size: 1.2em;
+	padding: 2%;
+	display: inline-block;
+}
+
+.openAccountField{
+	width: 50%;
+	margin: 0% auto;
+	padding: 2% 3.5%;
+	border: none;
+	font-size: 1em;
+	background-color: #EBEBEB;
+	border: none;
+	box-shadow: 0px 3px 5px rgba(22, 22, 22, 0.2);
+	border-radius: 20px;
+}
+
+#accountClass{
+	margin-bottom: 2%;
+}
+
+#accountClass input{
+	cursor: pointer;
+}
+
+#accountType{
+	text-align: center;
+	width: 30%;
+	margin: 0% auto;
+	padding: 2% 3.5%;
+	border: none;
+	font-size: 1em;
+	background-color: #EBEBEB;
+	border: none;
+	box-shadow: 0px 3px 5px rgba(22, 22, 22, 0.2);
+}
+
+
+
+
+
 
 
 

@@ -1,62 +1,79 @@
+<!-- 
+SYST45713
+Group: C
+Marc Harquail - 991399450
+Kevin Baumgartner - 991396870
+
+Website Open Account Page
+-->
 <!DOCTYPE html>
+<html id="openAll">
+	<head>
+		<!-- Meta Info -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>eInvestment | Open Account</title>
 
-<html>
-<head>
-	<title>eInvestments | Open Account </title>
+		<!-- Google Fonts Imports -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
+		<!-- Style Imports -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
 
-	<!-- Google Fonts Imports -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<!-- JQuery Import -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
 
-	<!-- Style Imports -->
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<link rel="stylesheet" type="text/css" href="./css/reset.css">
-	<link rel="stylesheet" type="text/css" href="./css/global.css">
-	<link rel="stylesheet" type="text/css" href="./css/homepage.css">
-</head>
+	<!-- Body -->
+	<body>
 
-<body>
-	<div id="navigationArea">
-		<ul id="navBar">
-			<li class="navItem" id="navLogo"><a class="" href="#"><img src="./assets/logo.png" width="80" /></a></li>
-			<li class="navItem"><a class="" href="homepage.html">Home</a></li>
-			<li class="navItem"><a class="" href="#">Clients</a></li>
-			<li class="navItem"><a class="" href="#">Settings</a></li>
-			<li class="navItem"><a class="" href="index.html">Logout</a></li>
-		</ul>
-	</div>
-	<div id="headerArea">
-		<h1>Welcome to eInvestment</h1>
-		<h2>Online Investment Banking</h2>
-	</div>
-	<div id="redeemArea"  > 
-		<h3> Open Account </h3>
-		<br>
-		<form name="redeemAccount" ACTION = "./php/openAcc.php" Method="Post">
-			<h4> Account ID </h4>
-			<input type="text" name="accountID" id="accountID" class="redeemAccountField" placeholder="100000000000000" required>
-			<br>
-			<h4> Client ID </h4>
-			<input type="text" name="clientId" id="clientId" class="redeemAccountField" placeholder="100000000000000" required>
-			<br>
-			<h4>Account Type </h4>
-			<select name="accountType" id="accountType" class="Dropdown" required>
-				<option value="RSP"> RSP</option>
-				<option value="GIC"> GIC</option>
-				<option value="IA"> IA</option>
-			</select>
-			<br/>	
-
-			<h4>Account Class </h4>
-			<input type="radio" name="accountClass" value="1" checked required>Retail 
-			<input type="radio" name="accountClass" value="2">Third Party
-			<div id="managementArea">
-				<input type="submit" class="loginLink" value="Create an Account" required="required">
-			</div>
-		</form>
-
-
+		<!-- Navigation Bar -->
+		<div id="navigationArea">
+			<ul id="navBar">
+				<img src="assets/logo.png" id="navLogo">
+				<li class="navItem"><a href="homepage.html">Home</a></li>
+				<li class="navItem navActive"><a href="openAccount.html">Open Account</a></li>
+				<li class="navItem"><a href="viewAccount.html">View Account</a></li>
+				<li class="navItem"><a href="closeAccount.html">Close Account</a></li>
+				<li class="navItem"><a href="invest.html">Invest</a></li>
+				<li class="navItem"><a href="withdraw.html">Withdraw</a></li>
+				<li class="navItem navLogout"><a href="index.html">Logout</a></li>
+			</ul>
 		</div>
 
+		<!-- Page Header -->
+		<div class="pageHeader">
+			<p>Open Account</p>
+			<hr>
+		</div>
+
+		<!-- Open Area -->
+		<div id="openArea"> 
+			<form name="openAccount" ACTION = "./php/openAcc.php" Method="Post">
+				<span class="openAccountHeader">Account ID</span>
+				<br>
+				<input type="text" name="accountID" id="accountID" class="openAccountField" placeholder="Account ID..." required>
+				<br>
+				<span class="openAccountHeader">Client ID</span>
+				<br>
+				<input type="text" name="clientId" id="clientId" class="openAccountField" placeholder="Client ID..." required>
+				<br>
+				<span class="openAccountHeader">Account Type</span>
+				<br>
+				<select name="accountType" id="accountType" required>
+					<option value="RSP">RSP</option>
+					<option value="GIC">GIC</option>
+					<option value="IA">IA</option>
+				</select>
+				<br>
+				<span class="openAccountHeader">Account Class</span>
+				<fieldset id="accountClass">
+					<input type="radio" name="accountClass" value="1" checked required>Retail
+					<input type="radio" name="accountClass" value="2">Third Party
+				</fieldset>
+				<input type="submit" class="globalButton" value="Create an Account" required="required">
+			</form>
+		</div>
 	</body>
-	</html>
+</html>

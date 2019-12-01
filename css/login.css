@@ -11,8 +11,9 @@ Colour Palette
 
 Normal Blue - #2465ab
 Dark Blue 	- #0c3969
-OffWhite 	- #FAFAFA
-OffBlack 	- #3D3D3D
+Off White 	- #FAFAFA
+Dark Grey	- #232323
+Medium Grey - #3D3D3D
 Grey 		- #EBEBEB
 */
 
@@ -115,7 +116,6 @@ h4{
 	color: #FAFAFA;
 	cursor: pointer;
 }
-
 
 #managementArea{
 	text-align: center;
