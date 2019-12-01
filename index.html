@@ -1,3 +1,10 @@
+<!-- 
+SYST45713
+Group: C
+Kevin Baumgartner - 991396870
+
+Website Login/Landing Page
+-->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -14,35 +21,42 @@
 		<link rel="stylesheet" type="text/css" href="css/global.css">
 		<link rel="stylesheet" type="text/css" href="css/login.css">
 
-		<style>
-			html{
-				background-color: #2465ab;
-			}
-		</style>
-
 		<!-- JQuery Import -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
+
+	<!-- Body -->
 	<body>
+
+		<!-- Header Area -->
 		<div id="headerArea">
-			<img src="./assets/logoTrans.png" width="800" />
+			<img id="headerLogo" src="./assets/logo.png"/>
+			<br>
+			<span id="headerText">eInvestment</span>
+			<hr id="split">
+			<span id="flavourText">Your Online Investing Solution.</span>
 		</div>
+
+		<!-- Login Area -->
 		<div id="loginArea">
-			<h3>Please Login Now:</h3>
-			<h4>E-mail Address</h4>
+			<h4>Email Address</h4>
 			<input type="text" id="loginUsername" class="loginField" placeholder="Email Address...">
 			<br>
 			<h4>Password</h4>
 			<input type="password" id="loginPassword" class="loginField" placeholder="Password...">
 			<br>
+
+			<!-- Buttons -->
 			<div id="managementArea">
-				<button id="loginButton" class="loginLink" onclick="Login()">Login</button>
+				<button id="loginButton" class="loginLink" onclick="Login()">Sign On</button>
 				<br>
-				<button id="createButton" class="loginLink" onclick="window.location.replace('./create.html')">Create an Account</button>
+				<button id="createButton" class="loginLink" onclick="location.href = 'create.html'">Create an Account</button>
 				<br>
-				<button id="recoverButton" class="loginLink">Forgot your Password</button>
+				<button id="recoverButton" class="loginLink" onclick="location.href = 'recover.html'">Forgot your Password</button>
 			</div>
 		</div>
 	</body>
+
+	<!-- Scripts -->
 	<script type="text/javascript" src="./js/login.js"></script>
 </html>

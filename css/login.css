@@ -1,3 +1,31 @@
+/*
+SYST45713
+Group: C
+Kevin Baumgartner - 991396870
+
+index.html dedicated CSS
+*/
+
+/*
+Colour Palette
+
+Normal Blue - #2465ab
+Dark Blue 	- #0c3969
+OffWhite 	- #FAFAFA
+OffBlack 	- #3D3D3D
+Grey 		- #EBEBEB
+*/
+
+/* Wrap */
+html{
+	background-color: #2465ab;
+}
+
+body{
+	margin-top: 10%;
+}
+
+/* Headers */
 h1{
 	font-size: 2em;
 	margin-top: 1%;
@@ -9,35 +37,64 @@ h2{
 
 h3{
 	font-size: 1.3em;
-	margin: 1%;
+	margin-bottom: 2%;
 }
 
+h4{
+	width: 72%;
+	text-align: left;
+	margin: 0 auto;
+	color: #3D3D3D;
+}
+
+/* Header Area */
 #headerArea{
+	margin: 0 auto;
+	margin-bottom: 2%;
 	text-align: center;
-	margin-bottom: 1%;
+	width: 100%;
 }
 
+#headerLogo{
+	width: 6%;
+}
+
+#headerText{
+	color: #FAFAFA;
+	font-size: 3.5em;
+}
+
+#flavourText{
+	color: #FAFAFA;
+	font-size: 1.2em;
+}
+
+#split{
+	color: #FAFAFA;
+	width: 20%;
+}
+
+/* Login Area */
 #loginArea{
 	text-align: center;
 	background-color: #EBEBEB;
 	width: 30%;
 	margin: 0 auto;
-	padding: 1%;
+	padding: 1.5%;
+	border-radius: 20px;
+	box-shadow: 0px 8px 7px rgba(22, 22, 22, 0.3);
 }
 
 .loginField{
 	width: 70%;
-	margin: 1% auto;
-	padding: 1%;
+	margin: 2% auto;
+	padding: 2% 3.5%;
 	border: none;
 	font-size: 1em;
 	background-color: #FAFAFA;
-	border: 1px solid #DADADA;
-}
-
-#managementArea{
-	text-align: center;
-	margin: 0.5% auto;
+	border: none;
+	box-shadow: 0px 3px 5px rgba(22, 22, 22, 0.2);
+	border-radius: 20px;
 }
 
 .loginLink{
@@ -47,19 +104,19 @@ h3{
 	border: none;
 	margin: 0.5% auto;
 	width: 40%;
-	transition: all 0.2s ease-in-out;
 	background-color: #2465ab;
 	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+	font-size: 0.8em;
 }
 
 .loginLink:hover{
-	background-color: #e84338;
+	background-color: #0c3969;
 	color: #FAFAFA;
 	cursor: pointer;
 }
 
-h4{
-	width: 72%;
-	text-align: left;
-	margin: 0 auto;
+
+#managementArea{
+	text-align: center;
 }

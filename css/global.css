@@ -1,52 +1,74 @@
+/*
+SYST45713
+Group: C
+Kevin Baumgartner - 991396870
+
+Global Stylizations
+*/
+
+/*
+Colour Palette
+
+Normal Blue - #2465ab
+Dark Blue 	- #0c3969
+OffWhite 	- #FAFAFA
+OffBlack 	- #3D3D3D
+Grey 		- #EBEBEB
+*/
+
+/* Wrap */
 html{
 	background-color: #FAFAFA;
 	font-family: Roboto, Helvetica, Verdana, Arial, sans-serif;
 	font-size: 1em;
 }
 
+/* Navigation Bar */
+#navigationArea{
+	background-color: #2465ab;
+	height: 80px;
+	width: 100%;
+}
+
 #navBar {
-	list-style-type: none;
-	margin-bottom: 1%;
-  	padding: 0;
-  	overflow: hidden;
-  	background-color: #2465ab;
-  	border-bottom: 1px solid #EBEBEB;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	display: inline-block;
 }
 
 .navItem {
-  	float: left;
-  	padding: 1% 0.5%;
-  	color: #FAFAFA;
-  	transition: all 0.2s ease-in-out;
-  	border-right: 1px solid #EBEBEB;
+	height: 80px;
+	display: table-cell;
+	vertical-align: middle;
+	transition: all 0.2s ease-in-out;
 }
 
 .navItem:hover{
-	background-color: #e84338;
-	cursor: pointer;
+	background-color: #0c3969;
 }
 
 .navItem a{
+	font-size: 1.3em;
 	color: #FAFAFA;
 	text-decoration: none;
 	text-transform: uppercase;
+	padding: 27px 25px;
+}
+
+.navRight{
+	
 }
 
 .navActive{
-
+	background-color: #0c3969;
 }
 
 #navLogo{
-	background-color: #EBEBEB;
-	float: left;
-  	padding: 1% 0.5%;
-  	color: #2465ab;
-  	transition: all 0.2s ease-in-out;
-  	border-right: 1px solid #EBEBEB;
+  	float: left;
+  	height: 60px;
+  	padding: 10px;
+  	background-color: #2465ab;
 }
 
-#navLogo a{
-	color: #2465ab;
-	text-decoration: none;
-	text-transform: uppercase;
-}
+/* homepage.html */
