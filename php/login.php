@@ -21,32 +21,34 @@ else
 }
 
 $loginValid;						
-$uN = $_POST['loginUsername'];
-$pW = $_POST['loginPassword'];							
+$email = $_POST['loginUsername'];
+$unhashedPassword = $_POST['loginPassword'];
+
+$splitUser = str_split($email);
+$arrSize = count($splitUser);
+$unhashedPassword = $unhashedPassword.$splitUser[0].$splitUser[$arrSize-1];						
 							
-$sql = "SELECT * FROM csr WHERE csr.email = '$uN' AND   csr.password = '$pW' ";							
+$sql = "SELECT email, password FROM csr WHERE csr.email = '$email'";							
 
 $result = $dbconnect->query($sql);
 
 if ($result->num_rows > 0) {
-  echo "success";
+	while($row = $result->fetch_assoc()) {
+		$email = $row["email"];
+		$assessmentHash = $row["password"];
+	}
+}
+else if ($result->num_rows > 1){
+	echo "More than one user has this username!";
 }
 else{
-  echo "Password Incorrect";
+	echo "Username or Password Incorrect!";
 }
-/*if (is(get($uN, "value")) && eq(get($pW, "value"), $check)) {
-  if (eq(get($pW, "value"), " ")) {
-    echo "success";
-  } else {
-    call_method($window, "print", "Username or password is incorrect");
-    echo "Password incorrect";
-  }
 
-} else if (eq(get($uN, "value"), Object::$null)) {
-  call_method($window, "print", "Username does not exist");
-  $loginValid = false;
-} else {
-  call_method($window, "print", "Please enter a username");
-  $loginValid = false;
-}*/
+if(password_verify($unhashedPassword, $assessmentHash)){
+	echo "success";
+}
+else{
+	echo "Username or Password Incorrect!";
+}
 ?>

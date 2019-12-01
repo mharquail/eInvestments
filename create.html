@@ -24,31 +24,27 @@
 		</div>
 		<div id="createArea">            
             <h3>Create CSR Account:</h3>
-            <form name="createAccount" ACTION="./php/create.php" METHOD='post'>
             	<h4>CSR ID</h4>        
-				<input type="text" name="csrId" id="csrId" class="createAccountField" placeholder="100000000000000" required="required" >
+				<input type="text" name="csrId" id="csrId" class="createAccountField" placeholder="100000000000000" required>
 				<br>
 				<h4>First Name</h4>
-				<input type="text" name="firstName" id="firstName" class="createAccountField" placeholder="John..." required="required">
+				<input type="text" name="firstName" id="firstName" class="createAccountField" placeholder="John..." required>
             	<br>
             	<h4>Last Name</h4>
-				<input type="text" name="lastName" id="lastName" class="createAccountField" placeholder="Smith..." required="required">
+				<input type="text" name="lastName" id="lastName" class="createAccountField" placeholder="Smith..." required>
             	<br>
             	<h4>Email</h4>
-				<input type="text" name="email" id="email" class="createAccountField" placeholder="abc@123.com..." required="required">
+				<input type="text" name="email" id="email" class="createAccountField" placeholder="abc@123.com..." required>
             	<br>
             	<h4>Password</h4>
-				<input type="password" name="pass" id="pass" class="createAccountField" placeholder="" required="required">
+				<input type="password" name="pass" id="pass" class="createAccountField" placeholder="" required>
            		<br>
            		<h4>Confirm Password</h4>
-				<input type="password" name="pass" id="pass" class="createAccountField" placeholder="" required="required">
+				<input type="password" name="pass" id="passVerify" class="createAccountField" placeholder="" required>
             	<br>
-			<div id="managementArea">
-				<input type="submit" class="createLink" value="Create an Account" required="required">
-                <br>
-            </form>
-			</div>
+            	<button id="createButton" class="loginLink" onclick="Create()">Create</button>
 		</div>
 	
 	</body>
+	<script type="text/javascript" src="./js/create.js"></script>
 </html>
