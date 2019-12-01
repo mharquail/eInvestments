@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Meta Info -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>eInvestment | Secure Login</title>
+
+		<!-- Google Fonts Imports -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+		<!-- Style Imports -->
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/global.css">
+		<link rel="stylesheet" type="text/css" href="./css/create.css">
+
+		<!-- JQuery Import -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="headerArea">
+			<h1>Welcome to eInvestment</h1>
+			<h2>Online Investment Banking</h2>
+		</div>
+		<div id="createArea">            
+            <h3>Create CSR Account:</h3>
+            <form name="createAccount" ACTION="./php/create.php" METHOD='post'>
+            	<h4>CSR ID</h4>        
+				<input type="text" name="csrId" id="csrId" class="createAccountField" placeholder="100000000000000" required="required" >
+				<br>
+				<h4>First Name</h4>
+				<input type="text" name="firstName" id="firstName" class="createAccountField" placeholder="John..." required="required">
+            	<br>
+            	<h4>Last Name</h4>
+				<input type="text" name="lastName" id="lastName" class="createAccountField" placeholder="Smith..." required="required">
+            	<br>
+            	<h4>Email</h4>
+				<input type="text" name="email" id="email" class="createAccountField" placeholder="abc@123.com..." required="required">
+            	<br>
+            	<h4>Password</h4>
+				<input type="password" name="pass" id="pass" class="createAccountField" placeholder="" required="required">
+           		<br>
+           		<h4>Confirm Password</h4>
+				<input type="password" name="pass" id="pass" class="createAccountField" placeholder="" required="required">
+            	<br>
+			<div id="managementArea">
+				<input type="submit" class="createLink" value="Create an Account" required="required">
+                <br>
+            </form>
+			</div>
+		</div>
+	
+	</body>
+</html>

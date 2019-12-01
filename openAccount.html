@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>eInvestments | Open Account </title>
+
+
+	<!-- Google Fonts Imports -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+	<!-- Style Imports -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/global.css">
+	<link rel="stylesheet" type="text/css" href="./css/homepage.css">
+</head>
+
+<body>
+	<div id="navigationArea">
+		<ul id="navBar">
+			<li class="navItem" id="navLogo"><a class="" href="#"><img src="./assets/logo.png" width="80" /></a></li>
+			<li class="navItem"><a class="" href="homepage.html">Home</a></li>
+			<li class="navItem"><a class="" href="#">Clients</a></li>
+			<li class="navItem"><a class="" href="#">Settings</a></li>
+			<li class="navItem"><a class="" href="index.html">Logout</a></li>
+		</ul>
+	</div>
+	<div id="headerArea">
+		<h1>Welcome to eInvestment</h1>
+		<h2>Online Investment Banking</h2>
+	</div>
+	<div id="redeemArea"  > 
+		<h3> Open Account </h3>
+		<br>
+		<form name="redeemAccount" ACTION = "./php/openAcc.php" Method="Post">
+			<h4> Account ID </h4>
+			<input type="text" name="accountID" id="accountID" class="redeemAccountField" placeholder="100000000000000" required>
+			<br>
+			<h4> Client ID </h4>
+			<input type="text" name="clientId" id="clientId" class="redeemAccountField" placeholder="100000000000000" required>
+			<br>
+			<h4>Account Type </h4>
+			<select name="accountType" id="accountType" class="Dropdown" required>
+				<option value="RSP"> RSP</option>
+				<option value="GIC"> GIC</option>
+				<option value="IA"> IA</option>
+			</select>
+			<br/>	
+
+			<h4>Account Class </h4>
+			<input type="radio" name="accountClass" value="1" checked required>Retail 
+			<input type="radio" name="accountClass" value="2">Third Party
+			<div id="managementArea">
+				<input type="submit" class="loginLink" value="Create an Account" required="required">
+			</div>
+		</form>
+
+
+		</div>
+
+	</body>
+	</html>

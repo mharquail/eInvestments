@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Meta Info -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>eInvestment | Homepage</title>
+
+		<!-- Google Fonts Imports -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+		<!-- Style Imports -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/homepage.css">
+
+		<!-- JQuery Import -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="navigationArea">
+			<ul id="navBar">
+				<li class="navItem" id="navLogo">
+					<a class="" href="#">
+						<img src="./assets/logo.png" width="80" />
+					</a>
+				</li>
+				<li class="navItem"><a class="" href="#">Home</a></li>
+			  	<li class="navItem"><a class="" href="#">Clients</a></li>
+			  	<li class="navItem"><a class="" href="#">Settings</a></li>
+			  	<li class="navItem"><a class="" href="index.html">Logout</a></li>
+			</ul>
+		</div>
+		<div id="headerArea">
+			<h1>Welcome back!</h1> 
+        </div>
+        
+        <div id="redirectArea">
+            <br>
+			<div id="managementArea">
+                <h3>Please Choose An Option</h3>
+                <form action="openAccount.html">
+                        <input class="loginLink" type="submit" value="New Account" />
+                </form>
+                <form action="viewAccount.html">
+                        <input class="loginLink" type="submit" value="View Account" />
+                </form>
+                <form action="redeemAccount.html">
+                    <input class="loginLink" type="submit" value="Invest" />
+                </form>
+                <form action="redeemAccount.html">
+                    <input class="loginLink" type="submit" value="Withdraw" />
+                </form>
+                <form action="closeAccount.html">
+                        <input class="loginLink" type="submit" value="Close Account" />
+                </form>
+                <br><br><br><br>
+                <form action="index.html">
+                    <input class="loginLink" type="submit" value="Logout" />
+                </form>
+			</div>
+		</div>
+
+		<!-- Script Imports -->
+		<script type="text/javascript" src="js/homepage.js"></script>
+	</body>
+</html>

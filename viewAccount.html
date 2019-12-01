@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>eInvestments | Redeem Account </title>
+
+
+	<!-- Google Fonts Imports -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+	<!-- Style Imports -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/global.css">
+	<link rel="stylesheet" type="text/css" href="./css/homepage.css">
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="navigationArea">
+		<ul id="navBar">
+			<li class="navItem" id="navLogo"><a class="" href="#">eInvestment</a></li>
+			<li class="navItem"><a class="" href="homepage.html">Home</a></li>
+			<li class="navItem"><a class="" href="#">Clients</a></li>
+			<li class="navItem"><a class="" href="#">Settings</a></li>
+			<li class="navItem"><a class="" href="index.html">Logout</a></li>
+		</ul>
+	</div>
+	<div id="headerArea">
+		<h1>Welcome to eInvestment</h1>
+		<h2>Online Investment Banking</h2>
+	</div>
+	<div id="redeemArea"  > 
+		<h3> View Account </h3>
+		<br>
+		<h4> Client ID </h4>
+		<input type="text" id="clientID" class="redeemAccountField" placeholder="00000000">
+		<br>
+		<div id="managementArea">
+			<button id="viewButton" class="loginLink" onclick="viewAcc()">View Account</button>
+		</div>
+		<br>
+
+		<table id="accountTable" style="width:100%">
+			<tr>
+				<th > Account ID </th>
+				<th > Account Type </th>
+				<th > Balance</th>
+			</tr>
+			<tr>
+				<th id="id"> 123 </th>
+				<th id="accType"> GIC </th>
+				<th id="balance"> $0</th>
+			</tr>
+			<tr>
+				<th id="id"> 456 </th>
+				<th id="accType"> IA </th>
+				<th id="accountType"> $0</th>
+			</tr>
+			<tr>
+				<th id="id"> 789 </th>
+				<th id="accType"> RSP </th>
+				<th id="balance"> $0</th>
+			</tr>
+		</table>
+
+	</div>
+	<script type="text/javascript" src="js/view.js"></script>
+</body>
+</html>
