@@ -7,8 +7,6 @@ $username = "harquaim_php";
 $password = "t@Hu%=;aa_uj";
 $dbname = "harquaim_investments";
 
-
-
 //create connection
 $conn = mysqli_connect($servername,$username,$password,$dbname);
 
@@ -20,15 +18,15 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 	$num = $result->num_rows;
 	$output = "<tr>
-	<th > Account ID </th>
-	<th > Account Type </th>
-	<th > Balance</th>
+	<th>Account ID</th>
+	<th>Account Type</th>
+	<th>Balance</th>
 	</tr>";
 	while($row = $result->fetch_assoc()){
 		$output .= "<tr>
-				<th id='id'> ".$row['accountId']." </th>
-				<th id='accType'> ".$row['accountType']." </th>
-				<th id='balance'> $".$row['balance']." </th>
+				<td id='id'>".$row['accountId']."</th>
+				<td id='accType'>".$row['accountType']."</th>
+				<td id='balance'>$".$row['balance']."</th>
 			</tr>";
 	}
 	echo $output;
@@ -36,5 +34,4 @@ if ($result->num_rows > 0) {
 else{
 	echo "0";
 }
-
 ?>

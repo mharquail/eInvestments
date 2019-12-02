@@ -1,72 +1,86 @@
+<!-- 
+SYST45713
+Group: C
+Kevin Baumgartner - 991396870
+Marc Harquail - 991399450
+
+Website View Account Page
+-->
 <!DOCTYPE html>
+<html id="viewAll">
+	<head>
+		<!-- Meta Info -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>eInvestment | Open Account</title>
 
-<html>
-<head>
-	<title>eInvestments | Redeem Account </title>
+		<!-- Google Fonts Imports -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
+		<!-- Style Imports -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
 
-	<!-- Google Fonts Imports -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<!-- JQuery Import -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
 
-	<!-- Style Imports -->
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<link rel="stylesheet" type="text/css" href="./css/reset.css">
-	<link rel="stylesheet" type="text/css" href="./css/global.css">
-	<link rel="stylesheet" type="text/css" href="./css/homepage.css">
-	<link rel="stylesheet" type="text/css" href="./css/login.css">
+	<!-- Body -->
+	<body>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
-
-<body>
-	<div id="navigationArea">
-		<ul id="navBar">
-			<li class="navItem" id="navLogo"><a class="" href="#">eInvestment</a></li>
-			<li class="navItem"><a class="" href="homepage.html">Home</a></li>
-			<li class="navItem"><a class="" href="#">Clients</a></li>
-			<li class="navItem"><a class="" href="#">Settings</a></li>
-			<li class="navItem"><a class="" href="index.html">Logout</a></li>
-		</ul>
-	</div>
-	<div id="headerArea">
-		<h1>Welcome to eInvestment</h1>
-		<h2>Online Investment Banking</h2>
-	</div>
-	<div id="redeemArea"  > 
-		<h3> View Account </h3>
-		<br>
-		<h4> Client ID </h4>
-		<input type="text" id="clientID" class="redeemAccountField" placeholder="00000000">
-		<br>
-		<div id="managementArea">
-			<button id="viewButton" class="loginLink" onclick="viewAcc()">View Account</button>
+		<!-- Navigation Bar -->
+		<div id="navigationArea">
+			<ul id="navBar">
+				<img src="assets/logo.png" id="navLogo">
+				<li class="navItem"><a href="homepage.html">Home</a></li>
+				<li class="navItem"><a href="openAccount.html">Open Account</a></li>
+				<li class="navItem navActive"><a href="viewAccount.html">View Account</a></li>
+				<li class="navItem"><a href="closeAccount.html">Close Account</a></li>
+				<li class="navItem"><a href="invest.html">Invest</a></li>
+				<li class="navItem"><a href="withdraw.html">Withdraw</a></li>
+				<li class="navItem navLogout"><a href="index.html">Logout</a></li>
+			</ul>
 		</div>
-		<br>
 
-		<table id="accountTable" style="width:100%">
-			<tr>
-				<th > Account ID </th>
-				<th > Account Type </th>
-				<th > Balance</th>
-			</tr>
-			<tr>
-				<th id="id"> 123 </th>
-				<th id="accType"> GIC </th>
-				<th id="balance"> $0</th>
-			</tr>
-			<tr>
-				<th id="id"> 456 </th>
-				<th id="accType"> IA </th>
-				<th id="accountType"> $0</th>
-			</tr>
-			<tr>
-				<th id="id"> 789 </th>
-				<th id="accType"> RSP </th>
-				<th id="balance"> $0</th>
-			</tr>
-		</table>
+		<!-- Page Header -->
+		<div class="pageHeader">
+			<p class="pageHeaderTitle">View Account</p>
+			<hr>
+		</div>
 
-	</div>
-	<script type="text/javascript" src="js/view.js"></script>
-</body>
+		<!-- View Area -->
+		<div id="viewArea">
+			<span class="viewAccountHeader">Client ID</span>
+			<br>
+			<input type="text" id="clientID" class="viewAccountField" placeholder="Client ID...">
+			<br><br>
+			<button id="viewButton" class="globalButton" onclick="viewAcc()">View Account</button>
+			<br>
+			<table id="viewAccountTable">
+				<tr>
+					<th>Account ID</th>
+					<th>Account Type</th>
+					<th>Balance</th>
+				</tr>
+				<tr>
+					<td id="id">123</th>
+					<td id="accType">GIC</th>
+					<td id="balance">$0</th>
+				</tr>
+				<tr>
+					<td id="id">123</th>
+					<td id="accType">GIC</th>
+					<td id="balance">$0</th>
+				</tr>
+				<tr>
+					<td id="id">123</th>
+					<td id="accType">GIC</th>
+					<td id="balance">$0</th>
+				</tr>
+			</table>
+		</div>
+
+		<!-- Script Imports -->
+		<script type="text/javascript" src="js/view.js"></script>
+	</body>
 </html>

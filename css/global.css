@@ -262,6 +262,10 @@ html{
 }
 
 /* create.html */
+#createAll{
+
+}
+
 #createArea{
 	text-align: center;
 	width: 40%;
@@ -287,6 +291,10 @@ html{
 }
 
 /* recover.html */
+#recoverAll{
+
+}
+
 #recoverArea{
 	text-align: center;
 	width: 40%;
@@ -310,6 +318,80 @@ html{
 	box-shadow: 0px 3px 5px rgba(22, 22, 22, 0.2);
 	border-radius: 20px;
 }
+
+/* viewAccount.html */
+#viewAll{
+
+}
+
+#viewArea{
+	text-align: center;
+	width: 40%;
+	margin: 0 auto;
+}
+
+.viewAccountHeader{
+	font-size: 1.2em;
+	padding: 2%;
+	display: inline-block;
+}
+
+.viewAccountField{
+	width: 50%;
+	margin: 0% auto;
+	padding: 2% 3.5%;
+	border: none;
+	font-size: 1em;
+	background-color: #EBEBEB;
+	border: none;
+	box-shadow: 0px 3px 5px rgba(22, 22, 22, 0.2);
+	border-radius: 20px;
+}
+
+#viewAccountTable{
+	text-align: center;
+	width: 100%;
+	margin: 2% auto;
+	border: collapse;
+	background-color: #EBEBEB;
+	box-shadow: 0px 3px 5px rgba(22, 22, 22, 0.2);
+}
+
+#viewAccountTable th{
+	font-size: 1.2em;
+	padding: 2%;
+}
+
+#viewAccountTable td{
+	
+	padding: 1%;
+}
+
+#viewAccountTable td{
+	width: 33%;
+  	border: 1px solid black;
+}
+
+#viewAccountTable tr:first-child th {
+  	border-top: 0;
+}
+
+#viewAccountTable tr:last-child td {
+  	border-bottom: 0;
+}
+
+#viewAccountTable tr td:first-child, #viewAccountTable tr th:first-child {
+  	border-left: 0;
+}
+
+#viewAccountTable tr td:last-child, #viewAccountTable tr th:last-child {
+  	border-right: 0;
+}
+
+
+
+
+
 
 
 

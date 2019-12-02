@@ -7,8 +7,7 @@ function viewAcc(){
 		if (data == "0"){
 		}
 		else{
-			document.getElementById("accountTable").innerHTML = data;
+			document.getElementById("viewAccountTable").innerHTML = data;
 		}
-
 	});
 }
