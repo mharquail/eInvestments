@@ -262,7 +262,6 @@ html{
 }
 
 /* create.html */
-
 #createArea{
 	text-align: center;
 	width: 40%;
@@ -287,8 +286,30 @@ html{
 	border-radius: 20px;
 }
 
+/* recover.html */
+#recoverArea{
+	text-align: center;
+	width: 40%;
+	margin: 0 auto;
+}
 
+.recoverAccountHeader{
+	font-size: 1.2em;
+	padding: 2%;
+	display: inline-block;
+}
 
+.recoverAccountField{
+	width: 50%;
+	margin: 0% auto;
+	padding: 2% 3.5%;
+	border: none;
+	font-size: 1em;
+	background-color: #EBEBEB;
+	border: none;
+	box-shadow: 0px 3px 5px rgba(22, 22, 22, 0.2);
+	border-radius: 20px;
+}
 
 
 

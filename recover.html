@@ -1,0 +1,59 @@
+<!-- 
+SYST45713
+Group: C
+Kevin Baumgartner - 991396870
+Marc Harquail - 991399450
+
+Website Open Account Page
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Meta Info -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>eInvestment | Account Recovery</title>
+
+		<!-- Google Fonts Imports -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+		<!-- Style Imports -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+
+		<!-- JQuery Import -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+
+	<!-- Body -->
+	<body>
+
+		<!-- Navigation Bar -->
+		<div id="navigationArea">
+			<ul id="navBar">
+				<img src="assets/logo.png" id="navLogo">
+				<li class="navItem"><a href="index.html">Back</a></li>
+			</ul>
+		</div>
+
+		<!-- Page Header -->
+		<div class="pageHeader">
+			<p class="pageHeaderTitle">Recover Your Account</p>
+			<hr>
+			<p class="pageHeaderFlavour">To assist us in resetting your password, please provide us with your associated CSR ID and Email Address</p>
+		</div>
+
+		<!-- Recover Area -->
+		<div id="recoverArea">            
+            <span class="recoverAccountHeader">CSR ID</span>       
+            <br> 
+			<input type="text" name="csrId" id="csrId" class="recoverAccountField" placeholder="Representative ID..." required>
+			<br>
+            <span class="recoverAccountHeader">Email</span>
+            <br>
+			<input type="text" name="email" id="email" class="recoverAccountField" placeholder="Email Address..." required>
+            <br><br>
+            <button id="recoverButton" class="globalButton" onclick="alert('Sent a Password Reset to: ' + document.getElementById('email').value)">Send Password Reset</button>
+		</div>
+	</body>
+</html>
