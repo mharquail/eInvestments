@@ -1,69 +1,75 @@
+<!-- 
+SYST45713
+Group: C
+Kevin Baumgartner - 991396870
+Marc Harquail - 991399450
+
+Website Close Account Page
+-->
 <!DOCTYPE html>
+<html id="closeAll">
+	<head>
+		<!-- Meta Info -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>eInvestment | Close Account</title>
 
-<html>
-<head>
-	<title>eInvestments | Close Account </title>
+		<!-- Google Fonts Imports -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
+		<!-- Style Imports -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
 
-	<!-- Google Fonts Imports -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<!-- JQuery Import -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
 
-	<!-- Style Imports -->
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<link rel="stylesheet" type="text/css" href="./css/reset.css">
-	<link rel="stylesheet" type="text/css" href="./css/global.css">
-	<link rel="stylesheet" type="text/css" href="./css/homepage.css">
-</head>
+	<!-- Body -->
+	<body>
 
-<body>
-	<div id="navigationArea">
-		<ul id="navBar">
-			<li class="navItem" id="navLogo"><a class="" href="#">eInvestment</a></li>
-			<li class="navItem"><a class="" href="homepage.html">Home</a></li>
-			<li class="navItem"><a class="" href="#">Clients</a></li>
-			<li class="navItem"><a class="" href="#">Settings</a></li>
-			<li class="navItem"><a class="" href="index.html">Logout</a></li>
-		</ul>
-	</div>
-	<div id="headerArea">
-		<h1>Welcome to eInvestment</h1>
-		<h2>Online Investment Banking</h2>
-	</div>
-	<div id="closeArea"  > 
-		<h3> Close Account </h3>
-		<br>
-		<form name="closeAccount" ACTION = "" Method="Post">
-			<h4> Client ID </h4>
-			<input type="text" id="clientID" class="closeAccountField" placeholder="100000000000000">
-			<br>
-			<div id="managementArea">
-				<input type="submit" class="closeLink" value="Close Account">
-			</form>
+		<!-- Navigation Bar -->
+		<div id="navigationArea">
+			<ul id="navBar">
+				<img src="assets/logo.png" id="navLogo">
+				<li class="navItem"><a href="homepage.html">Home</a></li>
+				<li class="navItem"><a href="openAccount.html">Open Account</a></li>
+				<li class="navItem"><a href="viewAccount.html">View Account</a></li>
+				<li class="navItem navActive"><a href="closeAccount.html">Close Account</a></li>
+				<li class="navItem"><a href="invest.html">Invest</a></li>
+				<li class="navItem"><a href="withdraw.html">Withdraw</a></li>
+				<li class="navItem navLogout"><a href="index.html">Logout</a></li>
+			</ul>
 		</div>
-		<br>
-		<table style="width:100%">
-			<tr>
-				<th > Client ID </th>
-				<th "> Name </th>
-				<th > Type</th>
-			</tr>
-			<tr>
-				<th id="cID"> Value1 </th>
-				<th id="custName"> V2 </th>
-				<th id="accountType"> V3</th>
-			</tr>
-			<tr>
-				<th id="cID"> Value1 </th>
-				<th id="custName"> V2 </th>
-				<th id="accountType"> V3</th>
-			</tr>
-			<tr>
-				<th id="cID"> Value1 </th>
-				<th id="custName"> V2 </th>
-				<th id="accountType"> V3</th>
-			</tr>
-		</table>
-	</div>
 
-</body>
+		<!-- Page Header -->
+		<div class="pageHeader">
+			<p class="pageHeaderTitle">Close Account</p>
+			<hr>
+		</div>
+
+		<!-- Close Area -->
+		<div id="closeArea"> 
+			<form name="closeAccount" ACTION = "" Method="Post">
+				<span class="closeAccountHeader">Client ID</span>
+				<br>
+				<input type="text" id="clientID" class="closeAccountField" placeholder="Client ID...">
+				<br><br>
+				<input type="submit" class="globalButton" value="Find Accounts">
+				<button id="closeButton" class="globalButton" onclick="">Close Accounts</button>
+				<table id="closeAccountTable">
+					<tr>
+						<th>Account ID</th>
+						<th>Account Type</th>
+						<th>Balance</th>
+					</tr>
+					<tr>
+						<td id="id">123</th>
+						<td id="accType">GIC</th>
+						<td id="balance">$0</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
 </html>

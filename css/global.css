@@ -363,7 +363,6 @@ html{
 }
 
 #viewAccountTable td{
-	
 	padding: 1%;
 }
 
@@ -387,6 +386,89 @@ html{
 #viewAccountTable tr td:last-child, #viewAccountTable tr th:last-child {
   	border-right: 0;
 }
+
+/* closeAccount.html */
+#closeAll{
+
+}
+
+#closeArea{
+	text-align: center;
+	width: 40%;
+	margin: 0 auto;
+}
+
+.closeAccountHeader{
+	font-size: 1.2em;
+	padding: 2%;
+	display: inline-block;
+}
+
+.closeAccountField{
+	width: 50%;
+	margin: 0% auto;
+	padding: 2% 3.5%;
+	border: none;
+	font-size: 1em;
+	background-color: #EBEBEB;
+	border: none;
+	box-shadow: 0px 3px 5px rgba(22, 22, 22, 0.2);
+	border-radius: 20px;
+}
+
+#closeAccountTable{
+	text-align: center;
+	width: 100%;
+	margin: 2% auto;
+	border: collapse;
+	background-color: #EBEBEB;
+	box-shadow: 0px 3px 5px rgba(22, 22, 22, 0.2);
+}
+
+#closeAccountTable th{
+	font-size: 1.2em;
+	padding: 2%;
+}
+
+#closeAccountTable td{
+	padding: 1%;
+}
+
+#closeAccountTable td{
+	width: 33%;
+  	border: 1px solid black;
+}
+
+#closeAccountTable tr:first-child th {
+  	border-top: 0;
+}
+
+#closeAccountTable tr:last-child td {
+  	border-bottom: 0;
+}
+
+#closeAccountTable tr td:first-child, #closeAccountTable tr th:first-child {
+  	border-left: 0;
+}
+
+#closeAccountTable tr td:last-child, #closeAccountTable tr th:last-child {
+  	border-right: 0;
+}
+
+#closeButton:hover{
+	background-color: #c91c10 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
