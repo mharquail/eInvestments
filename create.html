@@ -1,50 +1,76 @@
+<!-- 
+SYST45713
+Group: C
+Marc Harquail - 991399450
+Kevin Baumgartner - 991396870
+
+Website Open Account Page
+-->
 <!DOCTYPE html>
 <html>
 	<head>
 		<!-- Meta Info -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>eInvestment | Secure Login</title>
+		<title>eInvestment | CSR Creation</title>
 
 		<!-- Google Fonts Imports -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 		<!-- Style Imports -->
-		<link rel="stylesheet" type="text/css" href="./css/reset.css">
-		<link rel="stylesheet" type="text/css" href="./css/global.css">
-		<link rel="stylesheet" type="text/css" href="./css/create.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
 
 		<!-- JQuery Import -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
+
+	<!-- Body -->
 	<body>
-		<div id="headerArea">
-			<h1>Welcome to eInvestment</h1>
-			<h2>Online Investment Banking</h2>
+
+		<!-- Navigation Bar -->
+		<div id="navigationArea">
+			<ul id="navBar">
+				<img src="assets/logo.png" id="navLogo">
+				<li class="navItem"><a href="index.html">Back</a></li>
+			</ul>
 		</div>
+
+		<!-- Page Header -->
+		<div class="pageHeader">
+			<p class="pageHeaderTitle">Welcome to eInvestment</p>
+			<hr>
+			<p class="pageHeaderFlavour">Please fill out the form below to create your Customer Service Representative Account!</p>
+		</div>
+
+		<!-- Create Area -->
 		<div id="createArea">            
-            <h3>Create CSR Account:</h3>
-            	<h4>CSR ID</h4>        
-				<input type="text" name="csrId" id="csrId" class="createAccountField" placeholder="100000000000000" required>
-				<br>
-				<h4>First Name</h4>
-				<input type="text" name="firstName" id="firstName" class="createAccountField" placeholder="John..." required>
-            	<br>
-            	<h4>Last Name</h4>
-				<input type="text" name="lastName" id="lastName" class="createAccountField" placeholder="Smith..." required>
-            	<br>
-            	<h4>Email</h4>
-				<input type="text" name="email" id="email" class="createAccountField" placeholder="abc@123.com..." required>
-            	<br>
-            	<h4>Password</h4>
-				<input type="password" name="pass" id="pass" class="createAccountField" placeholder="" required>
-           		<br>
-           		<h4>Confirm Password</h4>
-				<input type="password" name="pass" id="passVerify" class="createAccountField" placeholder="" required>
-            	<br>
-            	<button id="createButton" class="loginLink" onclick="Create()">Create</button>
+            <span class="createAccountHeader">CSR ID</span>       
+            <br> 
+			<input type="text" name="csrId" id="csrId" class="createAccountField" placeholder="Representative ID..." required>
+			<br>
+			<span class="createAccountHeader">First Name</span>
+			<br>
+			<input type="text" name="firstName" id="firstName" class="createAccountField" placeholder="First Name..." required>
+            <br>
+            <span class="createAccountHeader">Last Name</span>
+            <br>
+			<input type="text" name="lastName" id="lastName" class="createAccountField" placeholder="Last Name..." required>
+            <br>
+            <span class="createAccountHeader">Email</span>
+            <br>
+			<input type="text" name="email" id="email" class="createAccountField" placeholder="Email Address..." required>
+            <br>
+            <span class="createAccountHeader">Password</span>
+            <br>
+			<input type="password" name="pass" id="pass" class="createAccountField" placeholder="Password..." required>
+           	<br>
+           	<span class="createAccountHeader">Confirm Password</span>
+           	<br>
+			<input type="password" name="pass" id="passVerify" class="createAccountField" placeholder="One More Time..." required>
+            <br><br>
+            <button id="createButton" class="globalButton" onclick="Create()">Create</button>
 		</div>
-	
 	</body>
 	<script type="text/javascript" src="./js/create.js"></script>
 </html>
