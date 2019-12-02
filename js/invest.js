@@ -24,19 +24,28 @@ function searchAccount(){
 
 function invest(){
 	var accountId = document.getElementById("account");
-	var selAccount = accountId.options[accountId.selectedIndex].value;
+	var selAccount = accountId.options[accountId.selectedIndex].id;
+	console.log(selAccount);
+	var radios = document.getElementsByName("investmentType");
+	var investmentId = Math.floor(10000000 + Math.random() * 90000000);
+	var selRadio = $("input[name='investmentType']:checked").val();
 	var postData = {
+		"investmentId": investmentId,
 		"clientId": document.getElementById("accountID").value,
 		"accountId": selAccount,
-		"invAmount": document.getElementById("invAmount").value
+		"invAmount": document.getElementById("invAmount").value,
+		"investmentType": selRadio
 	};
 	$.post("php/invest.php",postData,function(data,status){
 		console.log("Connection Status: " + status + "\nData: " + data);
 		if (data == "success"){
 			alert("Investment has been made.\nThank you.");
 		}
-		else{
+		else if(data == "0"){
 			alert("An error occured\nPlease try again.");
+		}
+		else{
+			alert(data);
 		}
 
 	});
