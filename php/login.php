@@ -37,16 +37,15 @@ if ($result->num_rows > 0) {
 		$email = $row["email"];
 		$assessmentHash = $row["password"];
 	}
+	if(password_verify($unhashedPassword, $assessmentHash)){
+		echo "success";
+	}
+	else{
+		echo "Username or Password Incorrect!";
+	}
 }
 else if ($result->num_rows > 1){
 	echo "More than one user has this username!";
-}
-else{
-	echo "Username or Password Incorrect!";
-}
-
-if(password_verify($unhashedPassword, $assessmentHash)){
-	echo "success";
 }
 else{
 	echo "Username or Password Incorrect!";
