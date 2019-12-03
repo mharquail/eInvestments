@@ -40,6 +40,7 @@ function invest(){
 		console.log("Connection Status: " + status + "\nData: " + data);
 		if (data == "success"){
 			alert("Investment has been made.\nThank you.");
+			window.location.replace("./homepage.html");
 		}
 		else if(data == "0"){
 			alert("An error occured\nPlease try again.");
