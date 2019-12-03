@@ -35,8 +35,7 @@ if ($result->num_rows > 0) {
 		}
 		else if($investmentType == 2){
 			if($row['accountType'] == 'RSP' || $row['accountType'] == 'GIA'){
-				echo $row['accountType'];
-				//makeInvestment($conn);
+				makeInvestment($conn);
 			}
 			else{
 				echo "Savings investment cannot be purchased for this type of account.";
@@ -56,11 +55,25 @@ function makeInvestment($conn){
 	$result2 = $conn->query($sql);
 
 	if ($result2) {
-		echo "success";
+		updateBalance($conn);
 	}
 	else{
 		echo "Error: ". $conn -> error;
 	}
 }
 
+function updateBalance($conn){
+	global $clientId, $accountId, $invAmount;
+	//select data
+	$sql= "UPDATE investmentAccount SET balance = (balance + $invAmount) WHERE investmentAccount.accountId = $accountId AND investmentAccount.customerId = $clientId";
+
+	$result3 = $conn->query($sql);
+
+	if ($result3) {
+		echo "success";
+	}
+	else{
+		echo "Error: ". $conn -> error;
+	}
+}
 ?>
