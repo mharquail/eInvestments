@@ -1,3 +1,17 @@
+/*
+SYST45713
+Group: C
+Marc Harquail - 991399450
+Kevin Baumgartner - 991396870
+
+Website Close Account Page
+*/
+document.onkeypress = function(event){
+	if(event.keyCode == 13){
+		Login();
+	}
+}
+
 function Login(){
 	var postData = {
 		"loginUsername": document.getElementById("loginUsername").value,
