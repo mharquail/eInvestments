@@ -4,15 +4,15 @@ Group: C
 Marc Harquail - 991399450
 Kevin Baumgartner - 991396870
 
-Website Investment Page
+Website Withdraw Page
 -->
 <!DOCTYPE html>
-<html id="investAll">
+<html id="withdrawAll">
 	<head>
 		<!-- Meta Info -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>eInvestment | Invest</title>
+		<title>eInvestment | Withdraw</title>
 
 		<!-- Google Fonts Imports -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -36,49 +36,43 @@ Website Investment Page
 				<li class="navItem"><a href="openAccount.html">Open Account</a></li>
 				<li class="navItem"><a href="viewAccount.html">View Account</a></li>
 				<li class="navItem"><a href="closeAccount.html">Close Account</a></li>
-				<li class="navItem navActive"><a href="invest.html">Invest</a></li>
-				<li class="navItem"><a href="withdraw.html">Withdraw</a></li>
+				<li class="navItem"><a href="invest.html">Invest</a></li>
+				<li class="navItem navActive"><a href="withdraw.html">Withdraw</a></li>
 				<li class="navItem navLogout"><a href="index.html">Logout</a></li>
 			</ul>
 		</div>
 
 		<!-- Page Header -->
 		<div class="pageHeader">
-			<p class="pageHeaderTitle">Make an Investment</p>
+			<p class="pageHeaderTitle">Make a Withdrawal</p>
 			<hr>
 		</div>
 
-		<!-- Invest Area -->
-		<div id="investArea">
-			<span class="investAccountHeader">From Account</span>
+		<!-- Withdraw Area -->
+		<div id="withdrawArea">
+			<span class="withdrawAccountHeader">Client ID</span>
 			<br>
-			<input type="text" name="fromID" id="fromID" class="investAccountField" placeholder="Account ID..." required>
-			<br>
-			<span class="investAccountHeader">Client ID</span>
-			<br>
-			<input type="text" name="accountID" id="accountID" class="investAccountField" placeholder="Client ID..." required>
+			<input type="text" name="accountID" id="accountID" class="withdrawAccountField" placeholder="Client ID..." required>
 			<button id="searchButton" class="globalButton" onclick="searchAccount()">Search Accounts</button>
 			<br>
-			<span class="investAccountHeader">Investment Account</span>
+			<span class="withdrawAccountHeader">Investment Account</span>
 			<br>
 			<select name="account" id="account" disabled required>
 				<option selected="selected">Account -- Balance</option>
 			</select>
 			<br>
-			<span class="investAccountHeader">Amount</span>
+			<span class="withdrawAccountHeader">To Account</span>
 			<br>
-			<input type="number" min="0" name="invAmount" id="invAmount" class="investAccountField" placeholder="Investment Amount..." required>
+			<input type="text" name="fromID" id="fromID" class="withdrawAccountField" placeholder="Account ID..." required>
 			<br>
-			<span class="investAccountHeader">Account Class</span>
-			<fieldset id="investmentType">
-				<input type="radio" name="investmentType" value="1" checked required>GIC
-				<input type="radio" name="investmentType" value="2">Savings
-				<input type="radio" name="investmentType" value="3">Mutual Funds
-			</fieldset>
-			<button id="investButton" class="globalButton" onclick="invest()">Make Investment</button>
+			<span class="withdrawAccountHeader">Amount</span>
+			<br>
+			<input type="number" min="0" name="withAmount" id="withAmount" class="withdrawAccountField" placeholder="Withdrawal Amount..." required>
+			<br>
+			<button id="withdrawButton" class="globalButton" onclick="withdraw()">Make Withdrawal</button>
 		</div>
 
 		<!-- Script Imports -->
-		<script type="text/javascript" src="./js/invest.js"></script>
+		<script type="text/javascript" src="./js/withdraw.js"></script>
 	</body>
 </html>
