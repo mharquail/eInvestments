@@ -1,5 +1,13 @@
 <?php
 
+/*
+SYST45713
+Group: C
+Marc Harquail - 991399450
+
+Website Client Query Functionality
+*/
+
 $clientId = $_POST['clientId'];
 
 $servername = "142.55.32.48";

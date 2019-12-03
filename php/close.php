@@ -1,5 +1,13 @@
 <?php
 
+/*
+SYST45713
+Group: C
+Marc Harquail - 991399450
+
+Website Close Functionality
+*/
+
 $clientId = $_POST['clientId'];
 $accountId = $_POST['accountId'];
 $withAmount = $_POST['withAmount'];

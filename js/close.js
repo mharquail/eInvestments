@@ -1,3 +1,11 @@
+/*
+SYST45713
+Group: C
+Marc Harquail - 991399450
+
+Website Close Functionality
+*/
+
 function searchAccount(){
 	//Send over the client ID
 	var postData = {
@@ -15,9 +23,9 @@ function searchAccount(){
 			var accountDropdown = document.getElementById('account');
 			accountDropdown.disabled = false
 			accountDropdown.innerHTML = data;
-			document.getElementById("confirmHeader").style.display = "initial";
-			document.getElementById("verify").style.display = "initial";
-			document.getElementById("closeButton").style.display = "initial";
+			document.getElementById("confirmHeader").style.display = "block";
+			document.getElementById("verify").style.display = "block";
+			document.getElementById("closeButton").style.display = "block";
 		}
 
 	});

@@ -1,5 +1,14 @@
 <?php
 
+/*
+SYST45713
+Group: C
+Marc Harquail - 991399450
+Archit Saini - 991398021
+
+Website Invest Functionality
+*/
+
 $investmentId = $_POST['investmentId'];
 $clientId = $_POST['clientId'];
 $accountId = $_POST['accountId'];

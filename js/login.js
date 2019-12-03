@@ -2,10 +2,12 @@
 SYST45713
 Group: C
 Marc Harquail - 991399450
+Dallas Cruz - 991416380
 Kevin Baumgartner - 991396870
 
-Website Close Account Page
+Website Login Functionality
 */
+
 document.onkeypress = function(event){
 	if(event.keyCode == 13){
 		Login();

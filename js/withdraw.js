@@ -1,3 +1,11 @@
+/*
+SYST45713
+Group: C
+Marc Harquail - 991399450
+
+Website Withdraw Functionality
+*/
+
 function searchAccount(){
 	//Send over the client ID
 	var postData = {

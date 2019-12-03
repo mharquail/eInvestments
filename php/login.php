@@ -1,5 +1,14 @@
 <?php
 
+/*
+SYST45713
+Group: C
+Marc Harquail - 991399450
+Dallas Cruz - 991416380
+
+Website Login Functionality
+*/
+
 $servername = "142.55.32.48";
 $username = "harquaim_php";
 $password = "t@Hu%=;aa_uj";

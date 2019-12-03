@@ -1,5 +1,13 @@
 <?php
 
+/*
+SYST45713
+Group: C
+Marc Harquail - 991399450
+
+Website Open Functionality
+*/
+
 $accountID = $_POST['accountID'];
 $accountType = $_POST['accountType'];
 $accountClass = $_POST['accountClass'];

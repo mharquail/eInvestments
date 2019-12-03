@@ -1,3 +1,11 @@
+/*
+SYST45713
+Group: C
+Marc Harquail - 991399450
+
+Website View Account Functionality
+*/
+
 function viewAcc(){
 	var postData = {
 		"clientId": document.getElementById("clientID").value

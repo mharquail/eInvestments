@@ -1,3 +1,11 @@
+/*
+SYST45713
+Group: C
+Marc Harquail - 991399450
+
+Website Invest Functionality
+*/
+
 //Function that will look for corresponding investment accounts
 //for provided client id
 function searchAccount(){

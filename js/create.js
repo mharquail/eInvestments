@@ -1,3 +1,12 @@
+/*
+SYST45713
+Group: C
+Marc Harquail - 991399450
+Jash Patel - 991397023
+
+Website Create Functionality
+*/
+
 function Create(){
 	var password = document.getElementById("pass").value;
 	var passwordVerify = document.getElementById("passVerify").value;
