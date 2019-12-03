@@ -17,7 +17,7 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
 	$num = $result->num_rows;
-	$output = "<option selected='selected'>Account -- Balance</option>";
+	$output = "<option id='defaultAcc' selected='selected'>Account -- Balance</option>";
 	while($row = $result->fetch_assoc()){
 		$output .= "<option id='".$row['accountId']."'>".$row['accountId']." -- ".$row['balance']."</option>";
 	}

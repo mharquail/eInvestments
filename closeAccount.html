@@ -50,26 +50,21 @@ Website Close Account Page
 
 		<!-- Close Area -->
 		<div id="closeArea"> 
-			<form name="closeAccount" ACTION = "" Method="Post">
 				<span class="closeAccountHeader">Client ID</span>
 				<br>
-				<input type="text" id="clientID" class="closeAccountField" placeholder="Client ID...">
+				<input type="text" id="accountId" class="closeAccountField" placeholder="Client ID...">
+				<button id="searchButton" class="globalButton" onclick="searchAccount()">Search Accounts</button>
 				<br><br>
-				<input type="submit" class="globalButton" value="Find Accounts">
-				<button id="closeButton" class="globalButton" onclick="">Close Accounts</button>
-				<table id="closeAccountTable">
-					<tr>
-						<th>Account ID</th>
-						<th>Account Type</th>
-						<th>Balance</th>
-					</tr>
-					<tr>
-						<td id="id">123</th>
-						<td id="accType">GIC</th>
-						<td id="balance">$0</th>
-					</tr>
-				</table>
-			</div>
+				<select name="account" id="account" disabled required>
+					<option selected="selected">Account -- Balance</option>
+				</select>
+				<br><br>
+				<span class="closeAccountHeader" id="confirmHeader" style="display: none;">Enter Verification Phrase to confirm</span>
+				<br>
+				<input type="text" id="verify" class="closeAccountField" style="display: none" placeholder="DELETE ACCOUNT">
+				<br><br>
+				<button id="closeButton" class="globalButton" style="display: none" onclick="verifyDelete()">Close Accounts</button>
 		</div>
+		<script type="text/javascript" src="./js/close.js"></script>
 	</body>
 </html>
